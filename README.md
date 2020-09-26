@@ -18,7 +18,7 @@ Look how easy this terminal application is to use:
 
 Run python3 main.py in the terminal
 The terminal will connect to Etsy using the API
-If the item is below $500.00AUD an email will be sent, and the user will be
+If the item is below $11.50 AUD an email will be sent, and the user will be
 notified that the user has been sent an email, that includes the link to the 
 amazon product. 
 
