@@ -3,9 +3,11 @@
 
 ## This is terminal application is an Etsy web scraper.
 The problem I am solving with my terminal application is when to buy a product online.
-Products online increase and decrease all the time, so you never know when you’re
-getting the right price, or when the item will actually be in your budget to
-purchase. This terminal application uses an Etsy API to track the desired item.
+Products online increase and decrease all the time, so you never know when you are
+*actually* getting the best price, or when the item will actually be in your 
+budget to purchase. This terminal application uses Web Scraping with Etsy to 
+track the price desired item, and alert the user via email when the item is at
+or below their desired price.
 The item I have decided to track is a pair of Dr Phil earrings sold on Etsy.
 When the earrings fall below a price of $11.50 AUD, the application will send
 me an email to my outlook account, sent from my gmail. The application will 
