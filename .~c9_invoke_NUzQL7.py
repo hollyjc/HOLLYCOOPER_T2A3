@@ -28,7 +28,7 @@ def get_price():
     print(converted_price)
   
     
-    if(converted_price < 15.00):
+    if(converted_price < 11.50):
         send_mail()
 
 #get_price()
