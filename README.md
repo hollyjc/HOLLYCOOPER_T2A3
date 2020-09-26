@@ -1,4 +1,4 @@
-# HOLLYCOOPER_T2A3 - AMAZON WEB SCRAPER
+# HOLLYCOOPER_T2A3 - ETSY  WEB SCRAPER
 =======================================
 
 ## This is terminal application is an Amazon web scraper.
