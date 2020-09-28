@@ -38,3 +38,8 @@ amazon product.
 Install HOLLYCOOPER_T2A3 by opening this file and running the following in
 the terminal:
 python3 main.py 
+
+
+--------------------------------------------------------------
+#Flow Chart
+<img src=url"HOLLYCOOPER_T2A3.png">
