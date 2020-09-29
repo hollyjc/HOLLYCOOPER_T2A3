@@ -30,6 +30,8 @@ def get_price():
     
     if(converted_price < 11.50):
         send_mail()
+    else:
+        print("Price is above $11.50 - no email sent :-(")
 
 #get_price()
  
