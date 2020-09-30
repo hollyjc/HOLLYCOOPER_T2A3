@@ -50,4 +50,8 @@ python3 main.py
 
 ## Trello Board Screen Shots
 
-![Trello Board Screen Shot](HOLLYCOOPER_T2A3-2.png)
+![Trello Board Screen Shots #1](HOLLYCOOPER_T2A3-1.png)
+![Trello Board Screen Shot #2](HOLLYCOOPER_T2A3-2.png)
+![Trello Board Screen Shots #3](HOLLYCOOPER_T2A3-3.png)
+![Trello Board Screen Shots #4](HOLLYCOOPER_T2A3-4.png)
+![Trello Board Screen Shots #5](HOLLYCOOPER_T2A3-5.png)
