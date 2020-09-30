@@ -14,7 +14,9 @@ me an email to my outlook account, sent from my gmail. The application will
 check the price once each day. This can be changed to be more frequent or less 
 frequent, by modifying the timer. If the item is below $11.50 AUD, an email 
 will be sent and the terminal will display a message to let the user know that
-the email has been sent successfully. 
+the email has been sent successfully. If the item is *not* under the $11.50, a 
+message will be printed to the terminal to let the user know that no email has been 
+sent, as the price has not fallen.
 
 Look how easy this terminal application is to use:
 
@@ -32,7 +34,7 @@ amazon product.
 - they are willing to pay.
 - A much more convenient way than checking the item you want to buy each day - let this terminal application do the hard work for you, and simply email you when the item is at or below your desired price.
 
-# Installation
+## Installation
 ------------------------------------------------------------
 
 Install HOLLYCOOPER_T2A3 by opening this file and running the following in
@@ -41,5 +43,11 @@ python3 main.py
 
 
 --------------------------------------------------------------
-# Flow Chart
+## Flow Chart
 ![Flow Chart](HOLLYCOOPER_T2A3.png)
+
+--------------------------------------------------------------
+
+## Trello Board Screen Shots
+
+(HOLLYCOOPER_T2A3-2.png)
