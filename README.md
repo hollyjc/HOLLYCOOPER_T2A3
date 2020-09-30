@@ -50,4 +50,4 @@ python3 main.py
 
 ## Trello Board Screen Shots
 
-(HOLLYCOOPER_T2A3-2.png)
+![Trello Board Screen Shot](HOLLYCOOPER_T2A3-2.png)
