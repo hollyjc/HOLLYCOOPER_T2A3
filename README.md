@@ -1,6 +1,11 @@
 # HOLLYCOOPER_T2A3 - ETSY  WEB SCRAPER
 =======================================
 
+### Link to GitHub CI 
+https://github.com/hollyjc/HOLLYCOOPER_T2A3.git
+
+---------------------------------------------------------------------------------------
+
 ## This is terminal application is an Etsy web scraper.
 The problem I am solving with my terminal application is when to buy a product online.
 Products online increase and decrease all the time, so you never know when you are
