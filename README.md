@@ -60,3 +60,10 @@ python3 main.py
 ![Trello Board Screen Shots #3](HOLLYCOOPER_T2A3-3.png)
 ![Trello Board Screen Shots #4](HOLLYCOOPER_T2A3-4.png)
 ![Trello Board Screen Shots #5](HOLLYCOOPER_T2A3-5.png)
+
+-------------------------------------------------------------
+
+## App Screnshots 
+![Email sent terminal message](HOLLYCOOPER_T2A3-nosent.png)
+![Email has not been sent terminal message](HOLLYCOOPER_T2A3-sent.png)
+![Screenshot of email](HOLLYCOOPER_T2A3-Terminal.png)
