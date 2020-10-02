@@ -30,7 +30,7 @@ jobs:
         with:
           host: 54.152.166.83
           username: github-actions
-          key: ${{ secrets.SSH_KEY }}
+          key: ${{ SSH_KEY }}
           port: 22
           script: |
             rm -rf HOLLYCOOPER_T2A3
