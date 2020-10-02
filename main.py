@@ -26,7 +26,7 @@ def get_price():
     print(converted_price)
   
     
-    if(converted_price > 11.50):
+    if(converted_price < 11.50):
         subject = 'Dr Phil earrings - price has fallen'
         body = 'The price of the Dr Phil earrings has fallen - check the etsy link! https://www.etsy.com/au/listing/731261963/dr-phil-earrings?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=dr+phil&ref=sr_gallery-1-3&organic_search_click=1&pro=1'
         Mailer.send_mail(subject, body)
