@@ -36,4 +36,4 @@ jobs:
             rm -rf HOLLYCOOPER_T2A3
             git clone https://github.com/hollyjc/HOLLYCOOPER_T2A3.git
             python3.8 -m venv /home/github-actions/HOLLYCOOPER_T2A3/venv
-            /home/github-actions/squiz/venv/bin/pip3.8 install -r /home/github-actions/HOLLYCOOPER_T2A3/requirements.txt  
+            /home/github-actions/HOLLYCOOPER_T2A3/venv/bin/pip3.8 install -r /home/github-actions/HOLLYCOOPER_T2A3/requirements.txt  
