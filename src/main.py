@@ -44,3 +44,4 @@ class Time_mod:
     #call fucntion
     
 get_price()
+#
