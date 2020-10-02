@@ -5,15 +5,13 @@ from bs4 import BeautifulSoup
 import smtplib 
 import time 
 from urllib.request import urlopen
-
-#URL of earrings on etsy
-URL = 'https://www.etsy.com/au/listing/731261963/dr-phil-earrings?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=dr+phil&ref=sr_gallery-1-3&organic_search_click=1&pro=1'
-#User-Agent of computer 
-headers = { "User-Agent": 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.135 Safari/537.36' }
+from mailer import Mailer
+from conversion import Conversion
 
 #fucntion for prices, price conversion, title, and email
 def get_price():
-    page = urlopen("https://www.etsy.com/au/listing/731261963/dr-phil-earrings?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=dr+phil&ref=sr_gallery-1-3&organic_search_click=1&pro=1")
+    URL = 'https://www.etsy.com/au/listing/731261963/dr-phil-earrings?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=dr+phil&ref=sr_gallery-1-3&organic_search_click=1&pro=1'
+    page = urlopen(URL)
     soup = BeautifulSoup(page.read(), "html.parser")
     #Title of Product - Dr Phil Earrings
     print("**************************************************")
@@ -23,42 +21,20 @@ def get_price():
     #remove white space from price
     price = str(price.text.strip())
     #converting price from string to float
-    converted_price = float(price[-5:-1])
+    converted_price = Conversion.convert_price(price)
     #converting price from string to float
     print(converted_price)
   
     
-    if(converted_price < 11.50):
-        send_mail()
+    if(converted_price > 11.50):
+        subject = 'Dr Phil earrings - price has fallen'
+        body = 'The price of the Dr Phil earrings has fallen - check the etsy link! https://www.etsy.com/au/listing/731261963/dr-phil-earrings?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=dr+phil&ref=sr_gallery-1-3&organic_search_click=1&pro=1'
+        Mailer.send_mail(subject, body)
     else:
         print("Price is above $11.50 - no email sent :-(")
 
 #get_price()
  
- #gmail connection, gmail connection number, encrypt server connection   
-def send_mail():
-    server = smtplib.SMTP('SMTP.gmail.com', 587)
-    server.ehlo()
-    server.starttls()
-    server.ehlo()
-    
-    server.login('hollyjanecooperr@gmail.com', 'pqqqzufgzqsybcni')
-    
-    subject = 'Dr Phil earrings - price has fallen'
-    body = 'The price of the Dr Phil earrings has fallen - check the etsy link! https://www.etsy.com/au/listing/731261963/dr-phil-earrings?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=dr+phil&ref=sr_gallery-1-3&organic_search_click=1&pro=1'
-    
-    msg = f" Subject{subject} \n\n{body} "
-    
-    server.sendmail(
-        'hollyjanecooperr@gmail.com',
-        'holly_cooper@live.com.au',
-        msg
-        )
-    print('Email has been sent! :-)')
-    
-    #closing server connection
-    server.quit()
-    
 
 class Time_mod:
     while(True):
