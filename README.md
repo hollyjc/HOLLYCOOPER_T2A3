@@ -67,3 +67,11 @@ python3 main.py
 ![Email sent terminal message](HOLLYCOOPER_T2A3-nosent.png)
 ![Email has not been sent terminal message](HOLLYCOOPER_T2A3-sent.png)
 ![Screenshot of email](HOLLYCOOPER_T2A3-Terminal.png)
+
+
+------------------------------------------------------------
+
+## Public Key & public IP
+Please enter ls -al ~/.ssh into your terminal to see the ssh key. The public key
+is called: authorized_keys. The IP address is 54.211.19.99. 
+
